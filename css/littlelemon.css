@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background-color: blanchedalmond;
+    margin: 3rem 5%;
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2, h3 {
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+header > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: #333;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+section {
+    display: flex;
+    gap: 1rem; 
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    margin-bottom: 1rem; 
+    border: 3px solid cadetblue;
+    padding: 0.5rem; 
+    border-radius: 30px;
+    background-color: azure;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+  
+  .menu {
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  
+  .menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+  }
+  
+  .menu-item {
+    display: flex;
+  }
+  
+  .menu-item-img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+  }
+  
+  .menu-item-text {
+    flex-grow: 1;
+  }
+  
+  .menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .menu-item-name {
+    margin-right: 1.5em;
+  }
+  
+  .menu-item-desc {
+    line-height: 1.6;
+    text-align: left;
+  }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
+
+footer div {
+    text-align: center;
+}
+
+#restaurant {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+#chef {
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.footer-logo {
+    width: 80px;
+    height: auto;
+}
+
+#name {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+#email {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    nav li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
